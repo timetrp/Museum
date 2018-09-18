@@ -1,0 +1,32 @@
+#footer {
+
+    width: 100%;
+    min-height: 200pt;
+    background-color: rgb(40, 56, 81);
+}
+
+.content {
+    min-height: 900pt;
+    height: 90%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+
+}
+
+body {
+    background-color: rgb(40, 56, 81);
+    font-family: 'Merienda';
+    min-height: 1000pt;
+    height: 100%;
+}
+
+.h1-mainpage {
+    text-align: center;
+    padding: 100px;
+    color: rgb(40, 56, 81);
+    font-size: 5.0rem;
+}
+
+.nav-item a, .navbar a{
+    color: rgb(255, 255, 255);
+}
