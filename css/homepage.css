@@ -21,11 +21,21 @@
     margin-top: -105px;
 }
 
+.quote{
+    margin-bottom: 20px;
+}
+.writer {
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+
 button {
     margin-left: 30px;
     background-color: white;
     border-color: black;
     font-size: 20px;
+    border-width: 3px;
 }
 .tribe {
 
@@ -42,9 +52,7 @@ button {
     color: black;
 }
 
-.btn {
-    background-color: black;
-}
+
 #col1 {
     margin-left: 5%;
     border-right: 2px solid rgba(109, 102, 102, 0.3);
@@ -93,3 +101,4 @@ button {
     color: white;
     border-bottom: 2px solid grey;
 }
+
