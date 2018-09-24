@@ -48,16 +48,21 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+
+  /* opacity: 0; */
+    /* animation: 1.5s fadein 0.5s forwards; */
+
+
 }
 
-.tribe-name h1 {
-    
-}
+
 
 .tribe-content {
-    display: none;
+
     padding: 20px;
     flex-basis: 60%;
+    opacity: 0;
+    animation: 1.5s fadein 0.5s forwards;
 }
 
 .sub-content .side-img{
@@ -67,4 +72,34 @@
     background-size: cover;
     background-position: center;
     background-color: #3f51b5;
+
+    
 }
+
+@keyframes fadein {
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    100% {
+        opacity: 0;
+        
+    }
+}
+
+.hide {
+    display: none;
+    animation: 0.5s fadeout 0 forwards;
+
+}
+
+
+
+
+
+.red {
+    color: red;
+}
+
