@@ -48,6 +48,8 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+
+
 }
 
 .tribe-name h1 {
@@ -55,7 +57,7 @@
 }
 
 .tribe-content {
-    display: none;
+
     padding: 20px;
     flex-basis: 60%;
 }
@@ -67,4 +69,12 @@
     background-size: cover;
     background-position: center;
     background-color: #3f51b5;
+}
+
+.hide {
+    display: none;
+}
+
+.red {
+    color: red;
 }
