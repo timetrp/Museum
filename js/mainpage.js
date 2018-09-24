@@ -1,37 +1,63 @@
 var tribeName = document.querySelectorAll(".tribe-name");
 var tribeContent = document.querySelectorAll(".tribe-content");
 
-console.log(tribeName);
 
 
 tribeName.forEach(function(name,index){
 
-    name.addEventListener("mouseover", function(e){
-        $( this ).toggleClass( "hide" );
-        console.log($(tribeContent[index]));
-        $(tribeContent[index]).toggleClass("hide");
-    });
+        name.addEventListener("mouseover", function(e,index ){
+
+                console.log(e);
+                $( this ).addClass( "hide" );
+                $(e.target.nextElementSibling).removeClass("hide");
+                
+
+            
+           
+
+
+
+
+        });
+
+});
+
+
+
+
+
+
+// tribeContent.forEach(function(content,index){
+//     content.addEventListener("mouseout", function(e){
+        
+
+//         if(onMouseout[e.target.accessKey] === false){
+//             onMouseout[e.target.accessKey] = true;
+//             setInterval( function(){
+
+//                 onMousein[e.target.accessKey] = false;
+//                 onMouseout[e.target.accessKey] = false;
+                
+    
+              
+    
+//             } , 5000);
+
+
+//         }
+
+
+       
+       
+
 
 
       
 
-    
+//     });
 
 
-
-});
-
-tribeContent.forEach(function(content,index){
-    content.addEventListener("mouseout", function(e){
-
-        $( this ).toggleClass( "hide" );
-
-        $(tribeName[index]).toggleClass("hide");
-
-    });
-
-
-})
+// })
     
 
   
