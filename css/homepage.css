@@ -22,11 +22,16 @@
 }
 
 .quote{
+    padding-top: 10px;
     margin-bottom: 20px;
 }
 .writer {
-    margin-bottom: 30px;
+    padding-bottom: 10px;
     opacity: 0.8;
+}
+
+.boxing {
+    background: rgba(117, 97, 97, 0.4);
 }
 
 button {
