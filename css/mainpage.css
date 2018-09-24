@@ -1,0 +1,13 @@
+.main-content {
+    height: 1000px;
+    display: flex;
+}
+
+.navbar {
+    background-color:black;
+}
+
+#navbar-footer {
+    background-color: black;
+}
+
