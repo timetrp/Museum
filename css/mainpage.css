@@ -11,3 +11,45 @@
     background-color: black;
 }
 
+.main-content {
+    margin: 100px auto 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: auto;
+}
+
+.sub-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sub-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.side-img {
+    flex-basis: 40%;
+}
+
+.tribe-name {
+    display: none;
+    flex-basis: 60%;
+}
+
+.tribe-content {
+    padding: 20px;
+    flex-basis: 60%;
+}
+
+.sub-content .side-img{
+    height: 350px;
+    padding: 20px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    background-color: #3f51b5;
+}
