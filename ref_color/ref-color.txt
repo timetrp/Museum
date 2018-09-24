@@ -1,6 +1,0 @@
-Navy Blue
-1.#283851
-2.rgb(40, 56, 81)
-
-Dark Green
-1.rgb(63, 92, 68)
