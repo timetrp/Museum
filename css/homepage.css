@@ -20,6 +20,13 @@
 
     margin-top: -105px;
 }
+
+button {
+    margin-left: 30px;
+    background-color: white;
+    border-color: black;
+    font-size: 20px;
+}
 .tribe {
 
     max-width:100%;
@@ -32,7 +39,7 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 .btn {
