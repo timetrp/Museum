@@ -8,12 +8,20 @@
 
 #header1 {
     margin-left: 10px;
-   
+   height: 110px;
+   width: 350px;
 }
 #header2 {
+<<<<<<< HEAD
    
     position: relative;
     margin-left: 10%;
+=======
+   font-family: 'Titillium Web', sans-serif;
+   position: relative;
+   font-size: 30px;
+    margin-left: 8%;
+>>>>>>> editHomepage
     margin-top: -105px;
 }
 .tribe {
