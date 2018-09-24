@@ -1,0 +1,124 @@
+#footer {
+
+    width: 100%;
+    min-height: 200pt;
+    background-color: #fec925;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 1.2px;
+    
+}
+
+.content {
+    min-height: 900pt;
+    height: 90%;
+    margin: 0 auto;
+    background-color: #3a3a3a;
+
+}
+
+body {
+    background-color: #fec925;
+    /* font-family: 'Merienda'; */
+    min-height: 1000pt;
+    height: 100%;
+
+    
+}
+
+.h1-mainpage {
+    text-align: center;
+    padding: 100px;
+    color: #ffffff;
+    font-size: 5.0rem;
+}
+
+.nav-item a, .navbar-brand{
+    margin: 0 5px;
+    
+}
+
+/* .nav-item a:hover, .navbar-brand:hover{
+    background-color: #232323;
+    color: rgb(255, 255, 255);
+    
+} */
+
+.navbar-brand{
+    color: #ffffff;
+    padding: 10pt;
+    height: 100%;
+    width: 10%;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+li a{
+    color:#ffffff;
+    
+    
+}
+
+
+
+.navbar{
+    
+    padding: 0;
+    height:40pt;
+}
+
+
+#nav-container{
+    height:100%;
+}
+
+.hvr-sweep-to-bottom{
+    background-color: transparent;
+}
+
+.hvr-sweep-to-bottom:before{
+    background-color: #232323;
+    border-bottom: 5px solid #fec925;
+    
+
+}
+
+.nav-item-spec:hover{
+    color: white;
+}
+
+.nav-item-spec{
+    padding: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    height: 100%;
+    font-weight: 100;
+    letter-spacing: 1.2px;
+    color:rgb(255, 255, 255);
+    height: 100%;
+    
+}
+
+.navbar{
+    background-color: #fec925;
+   
+    
+}
+
+.container-spec{
+        font-size:25px;
+        margin: auto;
+        color: white;
+}
+
+.col-lg-4 a,.col-lg-4 a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.fa-home{
+    font-size:1.5em;
+}
+
