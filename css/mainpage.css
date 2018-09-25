@@ -64,6 +64,10 @@
     flex-basis: 60%;
     opacity: 0;
     animation: 1.5s fadein 0.5s forwards;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .sub-content .side-img{
@@ -115,8 +119,15 @@
     min-height: 300px;
     max-height: 300px;
     margin: 0;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
+.space-between {
+    min-height: 50px;
+}
 
 
 

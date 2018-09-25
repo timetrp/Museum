@@ -21,14 +21,16 @@ tribeName.forEach(function (name, index) {
             // $( this ).addClass( "hide" );
 
             jQuery(this).fadeOut("slow", () => {
-                $(this.nextElementSibling).fadeIn("slow", () => {
+                $(this.nextElementSibling).css("display", "flex")
+                .fadeIn("slow", () => {
 
                     setTimeout(function () {
 
 
                         $(this.nextElementSibling).fadeOut("slow", () => {
                             // console.log(this);
-                            $(this).fadeIn("slow");
+                            $(this).css("display", "flex")
+                            .fadeIn("slow");
                         })
 
 
