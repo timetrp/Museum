@@ -49,6 +49,7 @@
   justify-content: center;
   text-align: center;
 
+  
   /* opacity: 0; */
     /* animation: 1.5s fadein 0.5s forwards; */
 
@@ -83,16 +84,27 @@
 }
 
 @keyframes fadeout {
+    0% {
+        /* height: 300px; */
+        opacity: 1;
+    }
     100% {
-        opacity: 0;
+        opacity: 1;
+        height: 0;
+
         
     }
 }
 
 .hide {
     display: none;
-    animation: 0.5s fadeout 0 forwards;
 
+
+}
+
+.fadeout {
+
+    animation: 0.5s fadeout 0 forwards;
 }
 
 
