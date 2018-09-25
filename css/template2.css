@@ -24,7 +24,7 @@
     min-height: 50%;
     height: 400pt;
     margin: 0 auto;
-    background-color: #232323;
+    background-color: #ffffffa8;
 
 }
 
@@ -53,11 +53,7 @@ body {
 
 }
 
-/* .nav-item a:hover, .navbar-brand:hover{
-    background-color: #232323;
-    color: rgb(255, 255, 255);
-    
-} */
+
 
 .navbar-brand {
     color: #232323;
@@ -144,8 +140,12 @@ body {
 
 .col-lg-4 a,
 .col-lg-4 a:hover {
-    color:#232323;
+    color:#ffffff;
     text-decoration: none;
+}
+
+.add-bottom{
+    color:white;
 }
 
 .fa-home {
