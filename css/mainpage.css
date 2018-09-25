@@ -48,23 +48,79 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+
+  
+  /* opacity: 0; */
+    /* animation: 1.5s fadein 0.5s forwards; */
+
+
 }
 
-.tribe-name h1 {
-    
-}
+
 
 .tribe-content {
-    display: none;
+
     padding: 20px;
     flex-basis: 60%;
+    opacity: 0;
+    animation: 1.5s fadein 0.5s forwards;
 }
 
 .sub-content .side-img{
-    height: 350px;
+    /* height: 350px; */
     padding: 20px;
-    background-clip: content-box;
-    background-size: cover;
-    background-position: center;
-    background-color: #3f51b5;
+    /* background-clip: content-box; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-color: #3f51b5; */
+
+    
 }
+
+@keyframes fadein {
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        /* height: 300px; */
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        height: 0;
+
+        
+    }
+}
+
+
+
+.hide {
+    display: none;
+
+
+}
+
+.fadeout {
+
+    animation: 0.5s fadeout 0 forwards;
+}
+
+.carousel-frame {
+    flex-basis: 40%;
+    overflow: hidden;
+    min-height: 300px;
+    max-height: 300px;
+    margin: 0;
+}
+
+
+
+
+.red {
+    color: red;
+}
+
