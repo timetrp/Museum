@@ -10,12 +10,32 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/Hover-master/css/hover-min.css">
-    <link rel="stylesheet" href="../../css/homepage.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../../css/template2.css" />
+    <link rel="stylesheet" href="../css/Hover-master/css/hover-min.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/template2.css" />
     
-    <script src="../../js/template2.js"></script>
+    <script src="../js/template2.js"></script>
+ <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 450px;  /* The height is 400 pixels */
+        width: 450px;  /* The width is the width of the web page */
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    position: relative;
+    box-shadow: 3px 4px 15px 5px#888888;
+       }
+       #dscript {
+        margin-top: 40px;
+       }
+       p {
+        margin-top: 30px;
 
+       }
+    </style>
 </head>
 
 <body>
@@ -38,11 +58,42 @@
 
 
     <div class="content" style="display: block;">
-        <h1 class="h1-mainpage">Ethnic House</h1>
-        <hr>
+        <h1 class="h1-mainpage">Contact Us</h1>
+        
         <div class="content2" style="text-align: center;">
-
+<!-- /////////////////////////// -->
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 13.7911187, lng: 100.3231816};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 18, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj9hAiOroE048JH9s2uhgY7PSYQxCpoqI&callback=initMap">
+    </script>
+<!-- /////////////////////////// -->
+<h5 id="dscript">Descriptions</h5>
+<p>Research Institute for Languages and Cultures of Asia, Mahidol University 999 Budhamonthon </p>
+<p>Sai 4, Salaya, Nakhon Pathom 73170, Thailand.</p>
+<p>Tel. (662) 8002308-14 Fax. (662) 8002332</p>
+<p>E-mail : rilca.mu@gmail.com</p>
            
+
+
+
 
         </div>
         <hr>
