@@ -1,0 +1,260 @@
+html,
+body {
+    margin: 0;
+
+    padding: 0;
+
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+*{
+    margin: 1px;
+}
+body {
+    background-color: #232323;
+    overflow: auto;
+}
+
+.top {
+    width: 100%;
+    height: 10%;
+    margin: 0;
+   
+    display: block;
+    background-color: transparent;
+
+    /* border-bottom: 10px groove rgb(255, 255, 255); */
+}
+
+.content {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    /* overflow: auto; */
+
+    margin: 0;
+    display: block;
+    background-color: #232323;
+    -webkit-box-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
+    -moz-box-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
+    box-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.493);
+}
+
+.bottom {
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    display: block;
+    background-color: #232323;
+    -webkit-box-shadow: 2px 10px 129px 31px rgba(34, 34, 34, 0.82);
+    -moz-box-shadow: 2px 10px 129px 31px rgba(34, 34, 34, 0.82);
+    box-shadow: 2px 10px 129px 31px rgba(34, 34, 34, 0.82);
+    border-top: 10px ridge rgb(230, 164, 42);
+}
+
+.con-left-1,
+.con-right-1,
+.con-center-1,
+.con-left-2,
+.con-right-2,
+.con-center-2 {
+    background: rgb(224, 224, 224);
+    -webkit-box-shadow: 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
+    -moz-box-shadow: 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
+    box-shadow: 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
+
+}
+
+.con-left-1,
+.con-left-2,
+.con-right-1,
+.con-right-2 {
+    width: 15%;
+    height: 95%;
+
+    margin: 2.5%;
+    float: left;
+}
+
+.con-center-1,
+.con-center-2 {
+    width: 55%;
+    height: 95%;
+
+    margin: 2.5%;
+    float: left;
+}
+
+.row-1,
+.row-2 {
+
+    padding: 5%;
+    height: 40%;
+
+
+}
+
+.row-2 {
+
+    background-color: #ffffff;
+
+}
+
+
+
+.row-1 {
+    background-color: #232323;
+    -webkit-box-shadow: 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
+    -moz-box-shadow: 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
+    box-shadow: 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
+}
+
+.home,.home-button,.home-button:hover,.home-button-a,.home-button-a:hover{
+    text-align: center;
+    color:#ffffff;
+    width: 20%;
+    height: 80%;
+    margin: auto;
+    padding:10px;
+    text-decoration: none;
+    outline: none;
+    float: left;
+}
+
+.home-button,.home-button:hover,.home-button-a,.home-button-a:hover{
+    font-size: 1.3em;
+    font-weight:400;
+    letter-spacing: 2px;
+    width: 100%;
+    height: 100%;
+    
+    background-color: transparent;
+    border:none;
+    outline-style: none;
+}
+
+.bar{
+    text-align: center;
+    color:#ffffff;
+    width: 15%;
+    height: 80%;
+    margin: auto;
+    padding:10px;
+    text-decoration: none;
+    outline: none;
+    
+    float:right;
+}
+
+
+
+/* ==============Social bar ====================*/
+.socialBar {
+    /*JUST FOR POSITIONING THE SOCIAL DIV: CENTERED RIGHT*/
+    position: fixed;
+    right: 15px;
+    /*THIS WILL TAKE YOU A MARGIN FROM RIGHT*/
+    top: 50%;
+    /*CENTER THE DIV, DO NOT EDIT*/
+    transform: translate(0%, -50%);
+    /*CENTER THE DIV, DO NOT EDIT*/
+    -webkit-transform: translate(0%, -50%);
+    /*CENTER THE DIV, DO NOT EDIT*/
+    -moz-transform: translate(0%, -50%);
+    /*CENTER THE DIV, DO NOT EDIT*/
+    -o-transform: translate(0%, -50%);
+    /*CENTER THE DIV, DO NOT EDIT*/
+    background-color: rgb(255, 210, 64);
+    /*WHATEVER COLOR THAT YOU WANT*/
+
+
+}
+
+.socialBar .ico {
+    display: block;
+    /*VERTICAL POSITION*/
+    padding: 8px;
+    /*DO NOT EDIT, MAINTAINS THE CORRECT SIZE FOR BACKGROUND COLOR*/
+}
+
+.socialBar:hover .ico {
+    /*JUST ANIMATION, YOU CAN REMOVE IT IF YOU WANT A FAST COLOR CHANGE*/
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.socialBar .FbIcon:hover {
+    /*THIS MAKES A COLOR CHANGE*/
+
+    background-color: #3B5998;
+}
+
+.socialBar .IgIcon:hover {
+    background-color: rgb(139, 44, 119);
+}
+
+.socialBar .YtIcon:hover {
+    background-color: #BF221F;
+}
+
+.socialBar .SkIcon:hover {
+    background-color: #2AA4E9;
+}
+
+/* ==============Social bar ====================*/
+
+/* ==============Side bar ====================*/
+.side-bar1{
+    
+    background-color: rgb(255, 64, 64);
+    transition: all 1.0s;
+
+    /* animation: 1.0s slide-out ease-in-out; */
+    
+}
+/* .side-bar2{
+    left:-300px;
+    width: 300px;
+    height:100vh;
+    background-color: rgb(255, 210, 64);
+    position:fixed;
+    left:0;
+    animation: 1.0s slide-in ease-in-out;
+} */
+
+.side{
+    width: 300px;
+    height:100vh;
+    background-color: rgb(255, 210, 64);
+    position:fixed;
+    left:0;
+    transition: all 1.0s;
+}
+
+.side:hover{
+    width: 300px;
+    height:100vh;
+    background-color: rgb(255, 64, 64);
+    position:fixed;
+    left:0;
+    
+}
+@keyframes slide-in{
+    0%{left:0;}
+    100%{left:300px;}
+}
+
+@keyframes slide-out{
+    0%{right:-300px;}
+    100%{right:0;}
+}
+/* ==============Side bar ====================*/
