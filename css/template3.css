@@ -11,14 +11,36 @@ body {
     min-height: 100%;
     height: 100%;
     max-height: 100%;
+
+    background-color: rgba(15, 15, 15);
+}
+
+@keyframes op1{
+
+    0%{
+        opacity: 0.0;
+        right: 300px;
+    }
+    100%{
+        
+        opacity: 1.0;
+        right: 0;
+    }
+
 }
 
 *{
+    font-size: 12px;
     margin: 1px;
+    font-family: 'Playfair Display', serif; 
+    
+
+   
 }
 body {
-    background-color: #232323;
+    
     overflow: auto;
+    animation: none;
 }
 
 .top {
@@ -26,8 +48,10 @@ body {
     height: 10%;
     margin: 0;
    
-    display: block;
+    display: inline-block;
     background-color: transparent;
+
+   
 
     /* border-bottom: 10px groove rgb(255, 255, 255); */
 }
@@ -37,14 +61,31 @@ body {
     min-height: 100%;
     height: 100%;
     max-height: 100%;
+    
     /* overflow: auto; */
-
+    animation: none;
     margin: 0;
     display: block;
-    background-color: #232323;
+    background-color: transparent;
     -webkit-box-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
     -moz-box-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
     box-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.493);
+    z-index: 1;
+    position:relative;
+}
+/* Didn't use */
+.background-content{
+    background-image: url("../img/Mien/mein02.JPG");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    z-index:-1;
+    position:relative;
+    
+
 }
 
 .bottom {
@@ -119,8 +160,8 @@ body {
 .home,.home-button,.home-button:hover,.home-button-a,.home-button-a:hover{
     text-align: center;
     color:#ffffff;
-    width: 20%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     margin: auto;
     padding:10px;
     text-decoration: none;
@@ -129,11 +170,12 @@ body {
 }
 
 .home-button,.home-button:hover,.home-button-a,.home-button-a:hover{
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight:400;
     letter-spacing: 2px;
     width: 100%;
     height: 100%;
+   
     
     background-color: transparent;
     border:none;
@@ -143,8 +185,8 @@ body {
 .bar{
     text-align: center;
     color:#ffffff;
-    width: 15%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     margin: auto;
     padding:10px;
     text-decoration: none;
@@ -152,6 +194,68 @@ body {
     
     float:right;
 }
+
+.top-brand{
+    width:20%;
+    height:100%;
+}
+
+.bar-item{
+
+    font-size: 1.1em;
+    height: 100%;
+}
+
+.row{
+    margin-left:0;
+    margin-right:0;
+}
+
+h1,p{
+    text-align: center;
+    color:#ffffff;
+    font-size: 5.0em;
+    animation: op1 2.0s; 
+    /* -webkit-text-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
+    -moz-text-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
+    text-shadow: inset 2px 10px 129px 31px rgba(255, 255, 255, 0.493); */
+}
+
+
+p{
+    text-align: justify;
+    font-size:1.0em;
+}
+
+
+
+
+
+@media screen and (max-height: 498px) {
+
+   
+   
+    .socialBar{
+        display:none;
+    }
+
+   
+}
+
+@media screen and (max-width : 768px) {
+
+    .socialBar{
+        display:none;
+    }
+
+  
+    .bar{
+        display: none;
+    }
+
+}
+
+    
 
 
 
@@ -162,6 +266,7 @@ body {
     right: 15px;
     /*THIS WILL TAKE YOU A MARGIN FROM RIGHT*/
     top: 50%;
+    
     /*CENTER THE DIV, DO NOT EDIT*/
     transform: translate(0%, -50%);
     /*CENTER THE DIV, DO NOT EDIT*/
@@ -171,7 +276,7 @@ body {
     /*CENTER THE DIV, DO NOT EDIT*/
     -o-transform: translate(0%, -50%);
     /*CENTER THE DIV, DO NOT EDIT*/
-    background-color: rgb(255, 210, 64);
+    background-color: rgba(255, 210, 64, 0);
     /*WHATEVER COLOR THAT YOU WANT*/
 
 
@@ -180,7 +285,7 @@ body {
 .socialBar .ico {
     display: block;
     /*VERTICAL POSITION*/
-    padding: 8px;
+    padding: 0;
     /*DO NOT EDIT, MAINTAINS THE CORRECT SIZE FOR BACKGROUND COLOR*/
 }
 
@@ -194,21 +299,38 @@ body {
 
 .socialBar .FbIcon:hover {
     /*THIS MAKES A COLOR CHANGE*/
-
+border-radius: 30%;
     background-color: #3B5998;
 }
 
 .socialBar .IgIcon:hover {
+    border-radius: 30%;
     background-color: rgb(139, 44, 119);
 }
 
 .socialBar .YtIcon:hover {
+    border-radius: 30%;
     background-color: #BF221F;
 }
 
 .socialBar .SkIcon:hover {
+   border-radius: 30%;
     background-color: #2AA4E9;
 }
+
+a,a:hover{
+    font-size: 1.3em;
+    font-weight:400;
+    letter-spacing: 2px;
+    width: 100%;
+    height: 100%;
+   text-decoration: none;
+    color: #ffffff;
+    background-color: transparent;
+    border:none;
+    outline-style: none;
+}
+
 
 /* ==============Social bar ====================*/
 
