@@ -15,30 +15,32 @@ body {
     background-color: rgba(15, 15, 15);
 }
 
-@keyframes op1{
+@keyframes op1 {
 
-    0%{
+    0% {
         opacity: 0.0;
         right: 300px;
     }
-    100%{
-        
+
+    100% {
+
         opacity: 1.0;
         right: 0;
     }
 
 }
 
-*{
+* {
     font-size: 12px;
     margin: 1px;
-    font-family: 'Playfair Display', serif; 
-    
+    font-family: 'Playfair Display', serif;
 
-   
+
+
 }
+
 body {
-    
+
     overflow: auto;
     animation: none;
 }
@@ -47,11 +49,11 @@ body {
     width: 100%;
     height: 10%;
     margin: 0;
-   
+
     display: inline-block;
     background-color: transparent;
 
-   
+
 
     /* border-bottom: 10px groove rgb(255, 255, 255); */
 }
@@ -61,20 +63,26 @@ body {
     min-height: 100%;
     height: 100%;
     max-height: 100%;
-    
+
     /* overflow: auto; */
+    /* background-image: url("../img/Mien/mein02.JPG"); */
+    background-size: cover;
+    background-position: center;
     animation: none;
     margin: 0;
     display: block;
-    background-color: transparent;
+    background-color: #232323;
     -webkit-box-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
     -moz-box-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
     box-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.493);
     z-index: 1;
-    position:relative;
+    position: relative;
+
+
 }
+
 /* Didn't use */
-.background-content{
+/* .background-content{
     background-image: url("../img/Mien/mein02.JPG");
     background-size: cover;
     background-position: center;
@@ -86,7 +94,7 @@ body {
     position:relative;
     
 
-}
+} */
 
 .bottom {
     width: 100%;
@@ -142,89 +150,80 @@ body {
 
 }
 
-.row-2 {
-
-    background-color: #ffffff;
-
-}
 
 
 
-.row-1 {
-    background-color: #232323;
-    -webkit-box-shadow: 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
-    -moz-box-shadow: 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
-    box-shadow: 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
-}
-
-.home,.home-button,.home-button:hover,.home-button-a,.home-button-a:hover{
+.home,
+.home-button,
+.home-button:hover,
+.home-button-a,
+.home-button-a:hover {
     text-align: center;
-    color:#ffffff;
+    color: #ffffff;
     width: 100%;
     height: 100%;
     margin: auto;
-    padding:10px;
+    padding: 10px;
     text-decoration: none;
     outline: none;
     float: left;
 }
 
-.home-button,.home-button:hover,.home-button-a,.home-button-a:hover{
+.home-button,
+.home-button:hover,
+.home-button-a,
+.home-button-a:hover {
     font-size: 1.5em;
-    font-weight:400;
+    font-weight: 400;
     letter-spacing: 2px;
     width: 100%;
     height: 100%;
-   
-    
+
+
     background-color: transparent;
-    border:none;
+    border: none;
     outline-style: none;
 }
 
-.bar{
+.bar {
     text-align: center;
-    color:#ffffff;
+    color: #ffffff;
     width: 100%;
     height: 100%;
     margin: auto;
-    padding:10px;
+    padding: 10px;
     text-decoration: none;
     outline: none;
-    
-    float:right;
+
+    float: right;
 }
 
-.top-brand{
-    width:20%;
-    height:100%;
-}
-
-.bar-item{
+.bar-item {
 
     font-size: 1.1em;
     height: 100%;
 }
 
-.row{
-    margin-left:0;
-    margin-right:0;
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
-h1,p{
+h1,
+p {
     text-align: center;
-    color:#ffffff;
+    color: #ffffff;
     font-size: 5.0em;
-    animation: op1 2.0s; 
+    animation: op1 2.0s;
     /* -webkit-text-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
     -moz-text-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
     text-shadow: inset 2px 10px 129px 31px rgba(255, 255, 255, 0.493); */
 }
 
 
-p{
+p {
     text-align: justify;
-    font-size:1.0em;
+    font-size: 1.0em;
 }
 
 
@@ -233,29 +232,29 @@ p{
 
 @media screen and (max-height: 498px) {
 
-   
-   
-    .socialBar{
-        display:none;
+
+
+    .socialBar {
+        display: none;
     }
 
-   
+
 }
 
 @media screen and (max-width : 768px) {
 
-    .socialBar{
-        display:none;
+    .socialBar {
+        display: none;
     }
 
-  
-    .bar{
+
+    .bar {
         display: none;
     }
 
 }
 
-    
+
 
 
 
@@ -266,7 +265,7 @@ p{
     right: 15px;
     /*THIS WILL TAKE YOU A MARGIN FROM RIGHT*/
     top: 50%;
-    
+
     /*CENTER THE DIV, DO NOT EDIT*/
     transform: translate(0%, -50%);
     /*CENTER THE DIV, DO NOT EDIT*/
@@ -291,15 +290,15 @@ p{
 
 .socialBar:hover .ico {
     /*JUST ANIMATION, YOU CAN REMOVE IT IF YOU WANT A FAST COLOR CHANGE*/
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .socialBar .FbIcon:hover {
     /*THIS MAKES A COLOR CHANGE*/
-border-radius: 30%;
+    border-radius: 30%;
     background-color: #3B5998;
 }
 
@@ -314,20 +313,21 @@ border-radius: 30%;
 }
 
 .socialBar .SkIcon:hover {
-   border-radius: 30%;
+    border-radius: 30%;
     background-color: #2AA4E9;
 }
 
-a,a:hover{
+a,
+a:hover {
     font-size: 1.3em;
-    font-weight:400;
+    font-weight: 400;
     letter-spacing: 2px;
     width: 100%;
     height: 100%;
-   text-decoration: none;
+    text-decoration: none;
     color: #ffffff;
     background-color: transparent;
-    border:none;
+    border: none;
     outline-style: none;
 }
 
@@ -335,14 +335,15 @@ a,a:hover{
 /* ==============Social bar ====================*/
 
 /* ==============Side bar ====================*/
-.side-bar1{
-    
+.side-bar1 {
+
     background-color: rgb(255, 64, 64);
     transition: all 1.0s;
 
     /* animation: 1.0s slide-out ease-in-out; */
-    
+
 }
+
 /* .side-bar2{
     left:-300px;
     width: 300px;
@@ -353,30 +354,42 @@ a,a:hover{
     animation: 1.0s slide-in ease-in-out;
 } */
 
-.side{
+.side {
     width: 300px;
-    height:100vh;
+    height: 100vh;
     background-color: rgb(255, 210, 64);
-    position:fixed;
-    left:0;
+    position: fixed;
+    left: 0;
     transition: all 1.0s;
 }
 
-.side:hover{
+.side:hover {
     width: 300px;
-    height:100vh;
+    height: 100vh;
     background-color: rgb(255, 64, 64);
-    position:fixed;
-    left:0;
-    
-}
-@keyframes slide-in{
-    0%{left:0;}
-    100%{left:300px;}
+    position: fixed;
+    left: 0;
+
 }
 
-@keyframes slide-out{
-    0%{right:-300px;}
-    100%{right:0;}
+@keyframes slide-in {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 300px;
+    }
 }
+
+@keyframes slide-out {
+    0% {
+        right: -300px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
 /* ==============Side bar ====================*/
