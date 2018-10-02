@@ -18,3 +18,20 @@
 // //     side.classList.add("side-bar2");
     
 // // });
+
+
+$(document).ready ( function(){
+
+    var dropDown = document.querySelector('#collapse-nav');
+    console.log(dropDown);
+    $( "#toggle-drop-down" ).click(function() {
+        console.log('clicked');
+        console.log($('#collapse-nav'));
+        $( "#collapse-nav" ).toggleClass( 'newbar' );
+
+      });
+    
+
+
+ });
+
