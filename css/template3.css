@@ -15,6 +15,11 @@ body {
     background-color: rgba(15, 15, 15);
 }
 
+.fas.fa-bars {
+    display: none;
+}
+
+
 @keyframes op1 {
 
     0% {
@@ -173,7 +178,7 @@ body {
 .home-button:hover,
 .home-button-a,
 .home-button-a:hover {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 400;
     letter-spacing: 2px;
     width: 100%;
@@ -238,11 +243,30 @@ p {
         display: none;
     }
 
+    html {
+        min-height: 700px;
+    }
+
+    
+
 
 }
 
-@media screen and (max-width : 768px) {
+@media screen and (max-width: 1000px) {
 
+    .row.banner {
+       
+        font-size: 10px;
+        
+    }
+}
+
+@media screen and (max-width : 769px) {
+
+   
+    .navbar-toggler-icon{
+        display: block;
+    }
     .socialBar {
         display: none;
     }
@@ -252,7 +276,29 @@ p {
         display: none;
     }
 
+    .row.banner {
+       
+        flex-direction: row;
+        
+    }
+
+    .col.collapse{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
+    }
+
+    .fas.fa-bars {
+        display: inline-block;
+        font-size: 20px;
+        color: white;
+    }
+
 }
+
+
 
 
 
