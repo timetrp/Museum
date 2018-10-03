@@ -12,15 +12,20 @@
 }
 
 .main-content {
-    margin: 100px auto 0 auto;
+
+    margin: 0 0 0 0;
+    width: 100%;
+    padding-top: 100px;
+    /* padding: 100px 10%; */
     
     display: flex;
     flex-direction: column;
-    width: 90%;
-    padding: auto;
+
+
 }
 
 .sub-content {
+    padding: 0 5%;
     margin-bottom: 20px;
     width: 100%;
     display: flex;
@@ -34,6 +39,16 @@
 
 .side-img {
     flex-basis: 40%;
+}
+
+.name-content {
+
+    font-size: 100px;
+    flex-basis: 60%;
+    padding: 20px;
+    flex-basis: 60%;
+
+
 }
 
 .tribe-name {
@@ -135,3 +150,29 @@
     color: red;
 }
 
+
+@media (max-width: 850px){
+
+   
+
+    .sub-content{
+        flex-direction: column;
+
+    }
+    .tribe-content{
+        min-height: 400px;
+    }
+
+    .tribe-name {
+        min-height: 400px;
+    }
+    
+    .sub-content.reverse{
+        flex-direction: column;
+    }
+
+    .main-content{
+        height: 2000px;
+
+    }
+}

@@ -316,7 +316,7 @@ p {
         opacity: 1;
         display: block;
         animation : bounceInDown 1.2s;
-        height: 2000px;
+
         background-color: #232323;
         z-index: 20;
         position: absolute; 
