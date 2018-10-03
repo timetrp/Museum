@@ -24,33 +24,30 @@ $(document).ready ( function(){
 
     var dropDown = document.querySelector('#collapse-nav');
 
+    $('.bar-item a:not(:only-child)').click(function(e) {
+        console.log('dsff');
+        $('#dropdown-marker').toggleClass('dropped');
+        $(this).siblings('.nav-dropdown').toggle();
+
+        // Close one dropdown when selecting another
+        $('.nav-dropdown').not($(this).siblings()).hide();
+        e.stopPropagation();
+      });
+
+      $('html').click(function() {
+        $('.nav-dropdown').hide();
+      });
 
 
-        $( "#toggle-drop-down" ).click(function() {
+    $('#toggle-drop-down').click(function() {
 
 
-
-                if($( "#collapse-nav" ).hasClass('newbar')){
-
-                    // $( "#collapse-nav").addClass( 'animatebar');
-
-                    $( "#collapse-nav" ).toggleClass( 'newbar' );
-                    $( "#collapse-nav").addClass('afterbar');
+         $('#collapse-nav').slideToggle();
 
 
-                }else{
-
-                    $( "#collapse-nav" ).toggleClass( 'newbar' );
+      });
 
 
-                }
-                       
-           
-    
-          });
-
-
-    
   
     
 
