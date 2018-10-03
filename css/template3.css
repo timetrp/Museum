@@ -268,6 +268,17 @@ p {
     }
 }
 
+.afterbar {
+    opacity: 1;
+    
+    background-color: #232323;
+    z-index: 20;
+    position: absolute; 
+    height: 2000px;
+
+    animation: bounceOutUp 1.2s;
+}
+
 @media screen and (max-width : 769px) {
 
    
@@ -285,12 +296,24 @@ p {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between; */
-        display: none;
-        
+        /* display: none; */
+        /* animation: bounceOutUp 1.2s; */
+        opacity: 0;
+        background-color: #232323;
+        z-index: 20;
+        position: absolute; 
+        height: 2000px;
 
     }
 
+    
+
+    .animatebar {
+         animation: bounceOutUp 1.2s;
+    }
+
     .newbar {
+        opacity: 1;
         display: block;
         animation : bounceInDown 1.2s;
         height: 2000px;
@@ -511,6 +534,8 @@ a:hover {
       -webkit-transform: translate3d(0, 5px, 0);
       transform: translate3d(0, 5px, 0);
     }
+
+   
   
     to {
       -webkit-transform: translate3d(0, 0, 0);
@@ -554,5 +579,56 @@ a:hover {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+  }
+
+
+
+@-webkit-keyframes bounceOutUp {
+    0%{
+        opacity: 1;
+    }
+    20% {
+      -webkit-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+      opacity: 1;
+    }
+  
+    40%,
+    45% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 20px, 0);
+      transform: translate3d(0, 20px, 0);
+    }
+  
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -2000px, 0);
+      transform: translate3d(0, -2000px, 0);
+    }
+  }
+  
+  @keyframes bounceOutUp {
+    20% {
+      -webkit-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    40%,
+    45% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 20px, 0);
+      transform: translate3d(0, 20px, 0);
+    }
+  
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -2000px, 0);
+      transform: translate3d(0, -2000px, 0);
+    }
+  }
+  
+  .bounceOutUp {
+    -webkit-animation-name: bounceOutUp;
+    animation-name: bounceOutUp;
   }
   

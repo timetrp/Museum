@@ -23,13 +23,35 @@
 $(document).ready ( function(){
 
     var dropDown = document.querySelector('#collapse-nav');
-    console.log(dropDown);
-    $( "#toggle-drop-down" ).click(function() {
-        console.log('clicked');
-        console.log($('#collapse-nav'));
-        $( "#collapse-nav" ).toggleClass( 'newbar' );
 
-      });
+
+
+        $( "#toggle-drop-down" ).click(function() {
+
+
+
+                if($( "#collapse-nav" ).hasClass('newbar')){
+
+                    // $( "#collapse-nav").addClass( 'animatebar');
+
+                    $( "#collapse-nav" ).toggleClass( 'newbar' );
+                    $( "#collapse-nav").addClass('afterbar');
+
+
+                }else{
+
+                    $( "#collapse-nav" ).toggleClass( 'newbar' );
+
+
+                }
+                       
+           
+    
+          });
+
+
+    
+  
     
 
 
