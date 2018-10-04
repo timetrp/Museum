@@ -168,7 +168,8 @@ body {
   }
 }
 .section .middle {
-  background: slategray;
+  background: white;
+
   z-index: 2;
   padding: 0;
 }
@@ -215,8 +216,8 @@ body {
     border-radius: 50%; */
     /* background: #4679BD; */
 } 
-
-/* .middle {
+/* 
+.middle {
   height: 280px;
 } */
 /* 
