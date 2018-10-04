@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contactPage</title>
+	<link rel="stylesheet" type="text/css" href="../css/contact.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+	
+	<div id="headerImg">
+		<img class="img-responsive" src="../img/h1.jpg"  >
+	</div>
+	<div class="bgGoogle">
+		<div class="container">
+			<div class="row">
+				<div class="col col-lg-6">
+					<span class="d-block p-2 bg-dark text-white"><h5>Find Direction</h5></span>
+					<div id="map"></div>
+				</div>
+				<div class = "col col-lg-1"> </div>
+				<div class="col col-lg-5">
+					<h4 id="description">Description</h4> <br>
+					<p>Research Institute for Languages and Cultures of Asia, Mahidol University</p> <p>999 Budhamonthon Sai 4, Salaya, Nakhon Pathom 73170, Thailand.</p> 
+					<p>Tel. (662) 8002308-14 Fax. (662) 8002332 </p>
+					<p>E-mail : rilca.mu@gmail.com </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 13.7911187, lng: 100.3231816};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+  	document.getElementById('map'), {zoom: 18, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj9hAiOroE048JH9s2uhgY7PSYQxCpoqI&callback=initMap">
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
