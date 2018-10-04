@@ -38,21 +38,33 @@ body {
 
 a:hover,i:hover {
     cursor: pointer;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
+body{
+
+    overflow: auto;
+    
+    animation: open-page 1.0s;
+}
+
+#mainpage-h1{
+    border-right: 3px solid #ffffff;
+}
 
 @keyframes op1 {
 
     0% {
         opacity: 0.0;
         right: 300px;
+        border-right-color: #ffffff00;
     }
 
     100% {
 
         opacity: 1.0;
         right: 0;
+        border-right-color: #ffffff;
     }
 
 }
@@ -66,16 +78,13 @@ a:hover,i:hover {
 
 }
 
-body {
-
-    overflow: auto;
-    animation: none;
-}
 
 .top {
     width: 100%;
     height: 10%;
     margin: 0;
+
+    
 
     display: inline-block;
     background-color: transparent;
@@ -85,6 +94,19 @@ body {
     /* border-bottom: 10px groove rgb(255, 255, 255); */
 }
 
+#content-background-mainpage{
+    z-index: 1;
+    position: fixed;
+    display: block;
+    background-image: url("../img/Mien/mein02.JPG");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%; 
+    filter: opacity(0.6);
+    
+}
+
 .content {
     width: 100%;
     min-height: 100%;
@@ -92,17 +114,18 @@ body {
     max-height: 100%;
 
     /* overflow: auto; */
+    z-index: 9999;
     /* background-image: url("../img/Mien/mein02.JPG"); */
     background-size: cover;
     background-position: center;
     animation: none;
     margin: 0;
     display: block;
-    background-color: #232323;
-    -webkit-box-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
-    -moz-box-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.82);
-    box-shadow: inset 2px 10px 129px 31px rgba(15, 15, 15, 0.493);
-    z-index: 1;
+    /* background-color: #949494; */
+    -webkit-box-shadow: inset 2px 10px 129px 31px rgba(34, 34, 34, 0.493);
+    -moz-box-shadow: inset 2px 10px 129px 31px rgba(34, 34, 34, 0.493);
+    box-shadow: inset 2px 10px 129px 31px rgba(34, 34, 34, 0.493);
+   
     position: relative;
 
 
@@ -123,17 +146,7 @@ body {
 
 } */
 
-.bottom {
-    width: 100%;
-    height: 10%;
-    margin: 0;
-    display: block;
-    background-color: #232323;
-    -webkit-box-shadow: 2px 10px 129px 31px rgba(34, 34, 34, 0.82);
-    -moz-box-shadow: 2px 10px 129px 31px rgba(34, 34, 34, 0.82);
-    box-shadow: 2px 10px 129px 31px rgba(34, 34, 34, 0.82);
-    border-top: 10px ridge rgb(230, 164, 42);
-}
+
 
 .con-left-1,
 .con-right-1,
@@ -200,13 +213,13 @@ body {
 .home-button:hover,
 .home-button-a,
 .home-button-a:hover {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 400;
     letter-spacing: 2px;
     width: 100%;
     height: 100%;
 
-
+    color: #ffffff;
     background-color: transparent;
     border: none;
     outline-style: none;
@@ -266,9 +279,10 @@ p {
         display: none;
     }
 
-    html {
-        min-height: 700px;
+    html,body {
+        min-height: 1400px;
     }
+    
 
     
 
@@ -337,13 +351,19 @@ p {
         display: none;
         /* animation: bounceOutUp 1.2s; */
         /* opacity: 0; */
-        background-color: #232323;
+        background-color: #232323f3;
         z-index: 20;
         position: absolute; 
         height: 2000px;
         display: none;
 
     }
+
+    #mainpage-h1{
+        border-right: none;
+    }
+
+   
 
     
 
@@ -481,65 +501,6 @@ a:hover {
 
 /* ==============Social bar ====================*/
 
-/* ==============Side bar ====================*/
-.side-bar1 {
-
-    background-color: rgb(255, 64, 64);
-    transition: all 1.0s;
-
-    /* animation: 1.0s slide-out ease-in-out; */
-
-}
-
-/* .side-bar2{
-    left:-300px;
-    width: 300px;
-    height:100vh;
-    background-color: rgb(255, 210, 64);
-    position:fixed;
-    left:0;
-    animation: 1.0s slide-in ease-in-out;
-} */
-
-.side {
-    width: 300px;
-    height: 100vh;
-    background-color: rgb(255, 210, 64);
-    position: fixed;
-    left: 0;
-    transition: all 1.0s;
-}
-
-.side:hover {
-    width: 300px;
-    height: 100vh;
-    background-color: rgb(255, 64, 64);
-    position: fixed;
-    left: 0;
-
-}
-
-@keyframes slide-in {
-    0% {
-        left: 0;
-    }
-
-    100% {
-        left: 300px;
-    }
-}
-
-@keyframes slide-out {
-    0% {
-        right: -300px;
-    }
-
-    100% {
-        right: 0;
-    }
-}
-
-/* ==============Side bar ====================*/
 
 
 
@@ -672,3 +633,13 @@ a:hover {
     animation-name: bounceOutUp;
   }
   
+
+  @keyframes open-page{
+
+    0%{
+        opacity: 0.0;
+    }
+    100%{
+        opacity: 1.0;
+    }
+  }
