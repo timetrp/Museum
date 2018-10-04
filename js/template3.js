@@ -47,10 +47,5 @@ $(document).ready ( function(){
 
       });
 
-
-  
-    
-
-
  });
 

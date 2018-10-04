@@ -176,3 +176,21 @@
 
     }
 }
+.paragraph {
+   letter-spacing: 1.5px;
+   line-height: 2;
+}
+.firstLetter {
+    font-size: 20px;
+    font-weight: bold;
+}
+.carousel-inner {
+    width: 100%;
+}
+.carousel-item img{
+  object-fit:cover;
+  height:300px !important;
+  width:350px;
+}
+ 
+  
