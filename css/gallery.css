@@ -168,7 +168,7 @@ body {
   }
 }
 .section .middle {
-  background: white;
+  /* background: lightpink; */
 
   z-index: 2;
   padding: 0;
@@ -178,6 +178,9 @@ body {
   height: auto;
   display: block;
 }
+
+
+
 
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {

@@ -33,6 +33,12 @@ $(document).ready(function(){
    var $sm = 480;
    var $md = 768;
 
+   
+   $('.middle:eq(0)').css('background', 'beige');
+   $('.middle:eq(1)').css('background', 'lightsalmon');
+   $('.middle:eq(2)').css('background', 'lightpink');
+   $('.middle:eq(3)').css('background', 'mediumpurple');
+
 
 
 
