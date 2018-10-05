@@ -229,4 +229,8 @@ body {
 height: 100%;
 display: none;
 } */
-
+.descript {
+ font-weight: 200;
+  letter-spacing: 2px;
+  line-height: 3;
+}
