@@ -57,6 +57,8 @@ body {
   -webkit-transition: 0.3s ease-in-out all;
   transition: 0.3s ease-in-out all;
 }
+
+
 @media (min-width: 480px) {
   .section .left .content, .section .middle .content, .section .right .content {
     position: relative;
@@ -67,13 +69,22 @@ body {
   }
 }
 @media (min-width: 480px) {
-  .section .left, .section .middle, .section .right {
+  .section .left, .section .right {
     width: 50%;
     font-size: 0.9em;
     padding: 10px;
-    left: 0;
+    /* left: 0; */
     float: left;
     position: absolute;
+  }
+  .section .middle{
+    width: 50%;
+    font-size: 0.9em;
+    padding: 10px;
+    left: 50%;
+    float: left;
+    position: absolute;
+
   }
 }
 @media (min-width: 768px) {
@@ -92,11 +103,31 @@ body {
 .section.animate .left {
   left: 0;
 }
-@media (min-width: 480px) {
-  .section.animate .left {
+
+@media (max-width: 768px) {
+  .section.animate .right.map,.section.animate .left.map {
+
     left: 50%;
+    z-index: 2;
+  }
+  .section .map {
+    left: 50%;
+    z-index: 5;
+    display: block
+  }
+  .middle {
+    left: 50% ;
   }
 }
+
+@media (max-width: 480px){
+  .section.animate .right.map,.section.animate .left.map {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 @media (min-width: 768px) {
   .section.animate .left {
     left: 0;
@@ -105,14 +136,19 @@ body {
 .section.animate .right {
   left: 0;
 }
-@media (min-width: 480px) {
-  .section.animate .right {
-    left: 50%;
-  }
-}
 @media (min-width: 768px) {
   .section.animate .right {
     left: 66.66%;
+  }
+}
+
+@media (min-width: 768px){
+  .close-btn {
+    display: none;
+
+  }
+  span {
+    display: none;
   }
 }
 .section .title {
@@ -234,3 +270,74 @@ display: none;
   letter-spacing: 2px;
   line-height: 3;
 }
+
+span {
+
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+
+
+
+span:hover {
+  animation: flash 1s ;
+  cursor: pointer;
+  
+
+}
+
+
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.close-btn {
+  display: none;
+  width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 3;
+    right: 10px;
+    top: 20;
+    top: 70px;
+    background: white;
+    font-size: 26px;
+    opacity: 1;
+    color: rgb(158, 155, 155);
+}
+
+.close-btn:hover {
+  opacity: 1;
+  color: gray;
+  cursor: pointer;
+}
+
+.close-btn i {
+
+    padding-left: 10px;
+    padding-top: 5px
+}
+

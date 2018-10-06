@@ -27,8 +27,40 @@ var map4 = new google.maps.Map(
 var marker4 = new google.maps.Marker({position: Long, map: map4});
 }
 
+var x1;
+function showMap() {
+   var mapBtn = document.querySelectorAll('p.descript+span');
+   mapBtn.forEach(function(el){
+    console.log(el.textContent);
+   
+      $(el).click(function() {
+
+        if(this.textContent === "Show Map"){
+          x1 = this.parentElement.parentElement.parentElement.firstElementChild;
+
+          this.parentElement.parentElement.parentElement.lastElementChild.style.display = 'block';
+         this.parentElement.parentElement.parentElement.firstElementChild.style.opacity = "0";
+
+          this.textContent = "Hide Map";
+          
+        }else{
+          this.parentElement.parentElement.parentElement.lastElementChild.style.display = 'none';
+         this.parentElement.parentElement.parentElement.firstElementChild.style.opacity = "1";
+
+          this.textContent = "Show Map";
+
+        }
+
+         
+      })
+      
+   })
+}
+
 
 $(document).ready(function(){
+
+  showMap();
 
    var $sm = 480;
    var $md = 768;
@@ -48,7 +80,18 @@ $(document).ready(function(){
       if ($(window).width() >= $sm) {
          $('.left,.right,.section').css('height', $imgH);
       } else {
-         $('.left,.right,.section').css('height', 'auto');
+        console.log($imgH);
+         $('.section').css('height', 'auto');
+         $('.left,.right').css('height', $imgH);
+      }
+
+      if($(window).width() >= $md) {
+        $('.middle').css('opacity', '1');
+        $('.map').css('display', 'block');
+      }else{
+        $('.map').css('display', 'none');
+        $('.middle').css('opacity', '1');
+        $('.map-toggle').text('Show Map');
       }
    }
 
