@@ -10,127 +10,194 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/Hover-master/css/hover-min.css">
     <link rel="stylesheet" href="../css/homepage.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/template2.css" />
-    
+    <link rel="stylesheet" href="../css/template3.css">
     <script src="../js/template2.js"></script>
- <style>
-       /* Set the size of the div element that contains the map */
-      #map {
-        height: 450px;  /* The height is 400 pixels */
-        width: 70%;  /* The width is the width of the web page */
-        border-radius: 30%;
-        object-fit: cover;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    position: relative;
-    box-shadow: 3px 4px 15px 5px#888888;
-       }
-       #dscript {
-        margin-top: 40px;
-       }
-       p {
-        margin-top: 30px;
+    <style>
+        /* Set the size of the div element that contains the map */
+        #map {
+            height: 450px;
+            /* The height is 400 pixels */
+            width: 70%;
+            /* The width is the width of the web page */
+            border-radius: 30%;
+            object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            box-shadow: 3px 4px 15px 5px#888888;
         }
+
+        #dscript {
+            margin-top: 40px;
+        }
+
+        p {
+            margin-top: 30px;
+        }
+
         .contactInfo {
             color: white;
             letter-spacing: 1.5px;
             line-height: 2;
         }
+
         .direction {
             letter-spacing: 3px;
             line-height: 2;
             font font-weight: 100;
 
         }
+
         .containTable {
-            height:400px;
+            height: 400px;
             max-width: 100%;
             size: 500px;
             padding-top: 30px;
         }
+
         table {
             border-spacing: 3px;
         }
-        th,td {
+
+        th,
+        td {
             color: white;
             font-size: 20px;
             padding: 15px;
             letter-spacing: 1.5px;
         }
+
         th {
             text-align: center;
             vertical-align: middle;
         }
+
         #oIcon {
             display: flex;
             color: white;
             font-size: 100px;
             justify-content: center;
         }
-        
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container" id="nav-container">
 
-            <div class="row" style="width:100%;height:100%;text-align: center;">
-                <div class="col-lg-1" style="padding:0;"></div>
-                <div class="col-lg-2" ><a href="#" class="top-item hvr-grow">Gallery</a></div>
-                <div class="col-lg-2" > <a href="#" class="top-item hvr-grow">Tribe</a></div>
-                <div class="col-lg-2 top-center" style="font-size: 1.5em;"> <a href="#" class="top-item hvr-grow"><i class="fas fa-home "></i>Home <br> </a></div>
-                <div class="col-lg-2" ><a href="#" class="top-item hvr-grow">Contact Us</a></div>
-                <div class="col-lg-2" ><a href="#" class="top-item hvr-grow">Address</a></div>
-                <div class="col-lg-1" style="padding:0;"></div>
+
+
+
+
+
+
+
+
+
+    <div class="top" style="margin-bottom:40px;">
+
+        <div class="row banner">
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-7">
+                <div class="home"><a class="home-button-a" href="#">&nbsp;<i class="fas fa-university" style="font-size:1.5em;"></i>ETHNIC
+                        HOUSE</a></div>
+
+
             </div>
-            
-            
+
+            <div class="col collapse">
+
+                <i id="toggle-drop-down" class="fas fa-bars"></i>
+
+            </div>
+            <div class="col-xl-5 col-lg-6 col-md-7" style="padding:0;border-bottom: 3px solid #f0b03a;">
+                <div id="collapse-nav" class="bar">
+                    <div class="row bar-holder">
+
+                        <div class="bar-item"> <a href="#"> About</a> </div>
+                        <div class="bar-item "> <a href="#"> Location</a> </div>
+                        <div class="bar-item " id="dropdown-marker"> <a href="#"> Content</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#!">Karen</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Hmong</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Mien</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Lahu</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="bar-item"> <a href="#"> Contact</a> </div>
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
         </div>
-    </nav>
+    </div>
+
+
+
+
 
 
     <div class="content" style="display: block;">
         <h1 class="h1-mainpage">Contact Us</h1>
-        
+
         <div class="content2" style="text-align: center;">
-<!-- /////////////////////////// -->
-    <!--The div element for the map -->
-    <div id="map"></div>
-    <script>
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: 13.7911187, lng: 100.3231816};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 18, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
-    </script>
-    <!--Load the API from the specified URL
+            <!-- /////////////////////////// -->
+            <!--The div element for the map -->
+            <div id="map"></div>
+            <script>
+                // Initialize and add the map
+                function initMap() {
+                    // The location of Uluru
+                    var uluru = {
+                        lat: 13.7911187,
+                        lng: 100.3231816
+                    };
+                    // The map, centered at Uluru
+                    var map = new google.maps.Map(
+                        document.getElementById('map'), {
+                            zoom: 18,
+                            center: uluru
+                        });
+                    // The marker, positioned at Uluru
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
+                }
+            </script>
+            <!--Load the API from the specified URL
     * The async attribute allows the browser to render the page while the API loads
     * The key parameter will contain your own API key (which is not needed for this tutorial)
     * The callback parameter executes the initMap() function
     -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj9hAiOroE048JH9s2uhgY7PSYQxCpoqI&callback=initMap">
-    </script>
-<!-- /////////////////////////// -->
-<div class="contactInfo">
-<h5 id="dscript">Descriptions</h5>
-<p class="direction">Research Institute for Languages and Cultures of Asia, Mahidol University 999 Budhamonthon </p>
-<p class="direction">Sai 4, Salaya, Nakhon Pathom 73170, Thailand.</p>
-<p class="direction">Tel. (662) 8002308-14 Fax. (662) 8002332</p>
-<p class="direction">E-mail : rilca.mu@gmail.com</p>
-</div>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj9hAiOroE048JH9s2uhgY7PSYQxCpoqI&callback=initMap">
+            </script>
+            <!-- /////////////////////////// -->
+            <div class="contactInfo">
+                <h5 id="dscript">Descriptions</h5>
+                <p class="direction">Research Institute for Languages and Cultures of Asia, Mahidol University 999
+                    Budhamonthon </p>
+                <p class="direction">Sai 4, Salaya, Nakhon Pathom 73170, Thailand.</p>
+                <p class="direction">Tel. (662) 8002308-14 Fax. (662) 8002332</p>
+                <p class="direction">E-mail : rilca.mu@gmail.com</p>
+            </div>
 
-           
+
 
 
 
@@ -139,68 +206,39 @@ function initMap() {
         <hr>
     </div>
 
-<div data-aos="fade-up"
-     data-aos-duration="1000">
+    <div data-aos="fade-up" data-aos-duration="1000">
 
-    <i id="oIcon" class="fas fa-business-time"></i>
-    <div class="containTable" align="center">
-        <table >
-            <tr>
-                <th colspan="2" style="text-align: center">Operating Time</th>
-            </tr>
-            <tr>
-                <td>Weekdays</td>
-                <td> 8:00 - 17:00</td>
-            </tr>
-            <tr>
-                <td>Weekends</td>
-                <td>9:00 - 18:30</td>
-            </tr>
-        </table>
-</div>
-</div>
-
-    <div id="footer" class="sticky-bottom">
-
-
-        <div style="width:20%;height: 100%;float: left;background-color: #232323 "></div>
-            <div style="width:60%;height: 100%;float: left;background-color: #232323;padding-top:20px; font-size:1.8em;">
-                    <div class="row">
-                            
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-4"><a href="#"><i class="fab fa-facebook-square"></i>
-                                            Facebook</a></div>
-                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-4"><a href="#"><i class="fab fa-instagram"></i>
-                                            Instagram</a></div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4"><a href="#"><i class="fab fa-line"></i>
-                                            LineInfo</a></div>
-                                </div>
-                                <div class="row" style="padding-top:20px;">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 add-bottom">Mahidol Address</div>
-                                </div>
-            
-                                <div class="row" style="padding-top:20px;">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 add-bottom">Phone number</div>
-                                </div>
-                            </div>
-                            
-            
-            
-                        </div>
-            </div>
-            <div style="width:20%;height: 100%;float: left;background-color: #232323"></div>
-
-
+        <i id="oIcon" class="fas fa-business-time"></i>
+        <div class="containTable" align="center">
+            <table>
+                <tr>
+                    <th colspan="2" style="text-align: center">Operating Time</th>
+                </tr>
+                <tr>
+                    <td>Weekdays</td>
+                    <td> 8:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <td>Weekends</td>
+                    <td>9:00 - 18:30</td>
+                </tr>
+            </table>
+        </div>
     </div>
 
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   <script>
-  AOS.init();
-</script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script></body>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
 
 
 </body>
