@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="../css/template3.css">
     <script src="../js/template2.js"></script>
     <style>
+     html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
         /* Set the size of the div element that contains the map */
         #map {
             height: 450px;
@@ -183,8 +188,8 @@
       function initMap() {
         // Styles a map in night mode.
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 40.674, lng: -73.945},
-          zoom: 12,
+          center: {lat: 13.791281, lng: 100.323142},
+          zoom: 18,
           styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
@@ -270,11 +275,7 @@
     </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj9hAiOroE048JH9s2uhgY7PSYQxCpoqI&callback=initMap">
             </script> 
-            Load the API from the specified URL
-    * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
-    * The callback parameter executes the initMap() function
-    -->
+          
             
 
             <div id="content2">
