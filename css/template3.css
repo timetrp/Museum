@@ -22,7 +22,7 @@ body {
   z-index: 1;
 
   background-color: #232323;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); */
     list-style-type: none;
     padding: 0;
     text-align: left;

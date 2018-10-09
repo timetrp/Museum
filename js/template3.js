@@ -22,10 +22,11 @@
 
 $(document).ready ( function(){
 
-    var dropDown = document.querySelector('#collapse-nav');
+
 
     $('.bar-item a:not(:only-child)').click(function(e) {
-        console.log('dsff');
+
+        console.log(this);
         $('#dropdown-marker').toggleClass('dropped');
         $(this).siblings('.nav-dropdown').toggle();
 
@@ -35,17 +36,20 @@ $(document).ready ( function(){
       });
 
       $('html').click(function() {
-        $('.nav-dropdown').hide();
+       
       });
 
 
     $('#toggle-drop-down').click(function() {
-
-
          $('#collapse-nav').slideToggle();
-
-
       });
+
+      $(window).resize(function(){
+        $('.nav-dropdown').hide();
+        $('#dropdown-marker').removeClass('dropped');
+       });
+
+
 
  });
 

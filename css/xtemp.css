@@ -1,5 +1,7 @@
 html,
 body {
+   
+
     
     margin: 0;
 
@@ -20,12 +22,13 @@ body {
 .nav-dropdown {
     position: absolute;
   display: none;
-  z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  z-index: 30;
+  /* box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); */
     list-style-type: none;
     padding: 0;
     text-align: left;
     animation: bounceInDown 1.2s ;
+    background: #232323f3;
     
 }
 
@@ -160,7 +163,7 @@ a:hover,i:hover {
 .row.banner {
     background: #2e2e2e;
     font-size: 12px;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
 }
 
@@ -231,6 +234,11 @@ a:hover,i:hover {
         position: absolute; 
         height: 2000px;
         display: none;
+
+    }
+
+    ul {
+        background: #232323f3;
 
     }
 
