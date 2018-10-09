@@ -41,15 +41,18 @@
         }
 
         .contactInfo {
+            font-size: 20px;
             color: white;
             letter-spacing: 1.5px;
             line-height: 2;
+            padding-top: 30px;
         }
 
         .direction {
             letter-spacing: 3px;
             line-height: 2;
-            font font-weight: 100;
+            font-weight: 100;
+            font-size: 16px;
 
         }
 
@@ -57,7 +60,7 @@
             height: 400px;
             max-width: 100%;
             size: 500px;
-            padding-top: 30px;
+            padding-top: 50px;
         }
 
         table {
@@ -77,12 +80,23 @@
             vertical-align: middle;
         }
 
-        #oIcon {
+        #oIcon,#tIcon {
             display: flex;
             color: white;
             font-size: 100px;
-            justify-content: center;
+          
+
         }
+        #content2 {
+            height:260pt;
+        }
+        #content3 > div {
+            display:flex;
+            height: auto;
+            padding-top: 50px;
+            justify-content: center;
+            }
+
     </style>
 </head>
 
@@ -188,6 +202,7 @@
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj9hAiOroE048JH9s2uhgY7PSYQxCpoqI&callback=initMap">
             </script>
             <!-- /////////////////////////// -->
+            <div id="content2">
             <div class="contactInfo">
                 <h5 id="dscript">Descriptions</h5>
                 <p class="direction">Research Institute for Languages and Cultures of Asia, Mahidol University 999
@@ -196,23 +211,16 @@
                 <p class="direction">Tel. (662) 8002308-14 Fax. (662) 8002332</p>
                 <p class="direction">E-mail : rilca.mu@gmail.com</p>
             </div>
-
-
-
-
-
-
-        </div>
-        <hr>
-    </div>
-
+            </div>
+ <hr>
+ 
+<div id="content3">
     <div data-aos="fade-up" data-aos-duration="1000">
-
-        <i id="oIcon" class="fas fa-business-time"></i>
-        <div class="containTable" align="center">
+     <i id="oIcon" class="fas fa-business-time"></i>
+        <div class="containTable" align="center" >
             <table>
                 <tr>
-                    <th colspan="2" style="text-align: center">Operating Time</th>
+                    <th colspan="2" style="text-align: center" >Operating Time</th>
                 </tr>
                 <tr>
                     <td>Weekdays</td>
@@ -224,8 +232,9 @@
                 </tr>
             </table>
         </div>
+        <i id="tIcon" class="fas fa-bus"></i>
     </div>
-
+</div>
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
