@@ -311,7 +311,7 @@ a:hover,i:hover {
     right: 15px;
     /*THIS WILL TAKE YOU A MARGIN FROM RIGHT*/
     top: 50%;
-    z-index: 4000;
+    z-index: 4000px;
     /*CENTER THE DIV, DO NOT EDIT*/
     transform: translate(0%, -50%);
     /*CENTER THE DIV, DO NOT EDIT*/
