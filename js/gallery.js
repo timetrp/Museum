@@ -111,7 +111,8 @@ $(document).ready(function(){
          var $sectionVert = (($h/2)-($sectionH/4));
 
 
-         if (($elementPos - $sectionVert) <= $scrollPos && ($elementPos - $sectionVert) + $sectionH > $scrollPos &&$(window).width >= 480) {
+
+         if (($elementPos - $sectionVert) <= $scrollPos && ($elementPos - $sectionVert) + $sectionH > $scrollPos && $(window).width() >= 480) {
             $(this).addClass('animate');
          } else {
             $(this).removeClass('animate');
