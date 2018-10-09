@@ -122,7 +122,7 @@ body {
 }
 
 @media (max-width: 480px){
-  .section.animate .right.map,.section.animate .left.map {
+  .right.map,.left.map {
     position: absolute;
     top: 0;
     left: 0;
