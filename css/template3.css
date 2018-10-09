@@ -415,6 +415,12 @@ html{
 
 
 
+.socialBar a i {
+    font-size: 20px;
+}
+.socialBar a {
+    padding: 5px;
+}
 
 /* ==============Social bar ====================*/
 .socialBar {
@@ -435,6 +441,10 @@ html{
     /*CENTER THE DIV, DO NOT EDIT*/
     background-color: rgba(255, 210, 64, 0);
     /*WHATEVER COLOR THAT YOU WANT*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 
 }

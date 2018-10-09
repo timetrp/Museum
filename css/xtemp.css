@@ -311,7 +311,7 @@ a:hover,i:hover {
     right: 15px;
     /*THIS WILL TAKE YOU A MARGIN FROM RIGHT*/
     top: 50%;
-
+    z-index: 4000;
     /*CENTER THE DIV, DO NOT EDIT*/
     transform: translate(0%, -50%);
     /*CENTER THE DIV, DO NOT EDIT*/
@@ -323,8 +323,20 @@ a:hover,i:hover {
     /*CENTER THE DIV, DO NOT EDIT*/
     background-color: rgba(255, 210, 64, 0);
     /*WHATEVER COLOR THAT YOU WANT*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 
+}
+
+
+.socialBar a i {
+    font-size: 20px;
+}
+.socialBar a {
+    padding: 5px;
 }
 
 .socialBar .ico {
@@ -522,3 +534,18 @@ a:hover {
         opacity: 1.0;
     }
   }
+
+
+#content-background-mainpage{
+    z-index: 1;
+    position: fixed;
+    display: block;
+    background-image: url("../img/Mien/mein02.JPG");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%; 
+    filter:grayscale(100%) opacity(20%);
+    
+    
+}
