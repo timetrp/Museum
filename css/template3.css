@@ -56,7 +56,7 @@ body{
 
 html{
     
-    animation: open-page 3.0s;
+    animation: open-page 2.0s;
 }
 
 @keyframes op1 {
@@ -97,6 +97,10 @@ html{
     width: 100%;
     height: 100%; 
     filter:grayscale(100%) opacity(20%);
+
+    -webkit-box-shadow: inset 2px 10px 129px 31px rgba(0, 0, 0, 0.493);
+    -moz-box-shadow: inset 2px 10px 129px 31px rgba(0, 0, 0, 0.493);
+    box-shadow: inset 2px 10px 129px 31px rgba(0, 0, 0, 0.493);
     
     
 }
