@@ -49,10 +49,10 @@ body{
     
     animation: open-page 2.0s;
 } */
-/* 
-#mainpage-h1{
-    border-right: 3px solid #ffffff;
-} */
+ 
+#h1-mainpage{
+    padding-bottom: 30px;
+} 
 
 html{
     
