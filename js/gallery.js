@@ -75,7 +75,7 @@ $(document).ready(function(){
 
 
 
-   function resizeThis() {
+   function onResize() {
       $imgH = $('.middle img').width();
       if ($(window).width() >= $sm) {
          $('.left,.right,.section').css('height', $imgH);
@@ -95,10 +95,10 @@ $(document).ready(function(){
       }
    }
 
-   resizeThis();
+   onResize();
 
    $(window).resize(function(){
-      resizeThis();
+    onResize();
    });
 
    $(window).scroll(function() {

@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,900);
 body {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Playfair Display', serif;
 }
 
 .header, .footer {
@@ -245,26 +246,8 @@ body {
   width: 100%;
     height: 100%;
 
-
-/* }
-#googleMap {
-  width: 500px;
-    height: 500px;
-    /* -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%; */
-    /* background: #4679BD; */
 } 
-/* 
-.middle {
-  height: 280px;
-} */
-/* 
-.middle img{
-  width: auto;
-height: 100%;
-display: none;
-} */
+
 .descript {
  font-weight: 200;
   letter-spacing: 2px;
@@ -340,4 +323,3 @@ span:hover {
     padding-left: 10px;
     padding-top: 5px
 }
-

@@ -3,27 +3,76 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Slide-out Scrolling Gallery</title>
+    <title>Location</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../css/xtemp.css">
     <link rel="stylesheet" href="../css/gallery.css">
 
 
 </head>
 
 <body>
-    <!-- <div class="header" id="top">
-   <h1>Scroll Down</h1>
-   <i class="fa fa-angle-down animated bounce"></i>
-</div> -->
+    
 
-    <div class="section animate">
-          <!-- <div class="close-btn" >  <i class="fas fa-times"></i> </div> -->
-        <!-- background-image: url("../img/karen/step-rice.jpg") -->
+
+
+        <div id="content-background-mainpage"></div>
+        <div style="z-index: 9999; position: relative;">
+
+                <div class="socialBar">
+                        <a href="https://www.facebook.com/Rilca.Mahidol" title="Facebook" alt="link to facebook page of RILCA"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:rilca.mu@gmail.com" title="Instagram"><i class="fas fa-at"></i></a>
+                        <a href="./contact.html"><i class="fas fa-envelope"></i></a>
+        
+                    </div>
+        <div class="top" style="">
+                <div class="row banner">
+                    <div class="">
+                        <div class="home"><a class="home-button-a" href="#">&nbsp;<i class="fas fa-university" style="font-size:1.5em;"></i>ETHNIC
+                                HOUSE</a></div>
+    
+    
+                    </div>
+                    <div class="col collapse">
+                        <i id="toggle-drop-down" class="fas fa-bars"></i>
+                    </div>
+                    <div class="col-xl-5 col-lg-6 col-md-7" style="padding:0;     border-bottom: 3px solid #f0b03a;" >
+                        <div id = "collapse-nav" class="bar">
+                            <div class="row bar-holder">
+                                <div class="bar-item"> <a href="#"> About</a> </div>
+                                <div class="bar-item "> <a href="#"> Location</a> </div>
+                                <div class="bar-item " id="dropdown-marker"> <a href="#"> Content</a>
+                                    <ul class="nav-dropdown">
+                                            <li>
+                                              <a href="#!">Karen</a>
+                                            </li>
+                                            <li>
+                                              <a href="#!">Hmong</a>
+                                            </li>
+                                            <li>
+                                              <a href="#!">Mien</a>
+                                            </li>
+                                            <li>
+                                              <a href="#!">Lahu</a>
+                                            </li>
+                                          </ul>
+                                </div>
+                                <div class="bar-item"> <a href="#"> Contact</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+    <div class="section animate" style="">
+
+
         <div class="middle" style=''>
             <img src="../img/karen/karen_thum.png">
         </div>
@@ -31,7 +80,7 @@
             <div class="content">
                 <h2>Karen</h2>
                 <p class="descript">Located In: The Western border area<br> (Maehongson to Ratchaburi & Petchburi) </p>
-                <!-- <a href="#" class="btn-primary">Learn more</a> -->
+
                 <span class="map-toggle">Show Map</span>
             </div>
         </div>
@@ -46,9 +95,9 @@
         </div>
     </div>
 
-    <div class="section">
-            <!-- <div class="close-btn">  <i class="fas fa-times"></i> </div> -->
-        <!-- background-image: url("../img/Hmong/mhong01.jpg") -->
+    <div class="section" style="">
+
+
         <div class="middle" style=''>
             <img src="../img/Hmong/Hmong_thum.png" />
 
@@ -61,15 +110,15 @@
             </div>
         </div>
 
-        <div class="left tiles map">
+        <div class="left tiles map" >
             <div id="Hmong" class="googleMap"></div>
         </div>
 
     </div>
 
-    <div class="section">
-            <!-- <div class="close-btn">  <i class="fas fa-times"></i> </div> -->
-        <!-- background-image: url("../img/Mien/mein01.jpg") -->
+    <div class="section" style="">
+
+
         <div class="middle" style=''>
             <img src="../img/Mien/Yao_tumb.png" />
         </div>
@@ -89,8 +138,8 @@
 
     </div>
 
-    <div class="section">
-            <!-- <div class="close-btn">  <i class="fas fa-times"></i> </div> -->
+    <div class="section" style="">
+
         <div class="middle" style=''>
             <img src="../img/Lahu/Lahu.png" />
         </div>
@@ -115,9 +164,25 @@
         <a href="#top" class="scrollTo"><i class="fa fa-angle-up animated bounce"></i></a>
         <h1>Scroll Up</h1>
     </div>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
+
+
+</div>
+
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
     <script src="../js/gallery.js"></script>
+<script src='../js/template3.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
     <script>
 
