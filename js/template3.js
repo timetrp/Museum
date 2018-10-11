@@ -23,7 +23,19 @@
 $(document).ready ( function(){
 
 
+  var windowWidth = $(window).width();
+  
   $(window).resize(function(){
+
+    if ($(window).width() != windowWidth) {
+
+      // Update the window width for next time
+      windowWidth = $(window).width();
+
+      // Do stuff here
+
+  }
+
     $('#dropdown-marker').css('height', '55px');
     $('.nav-dropdown').css('display','none');
    });
