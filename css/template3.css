@@ -301,10 +301,6 @@ html {
 
     }
 
-    .dropped {
-        height: 300px;
-    }
-
     .bar {
         /* display: ; */
         /* display: flex;
@@ -321,7 +317,9 @@ html {
         display: none;
 
     }
-
+    .dropped {
+        display: contents;
+    }
 
 
 
