@@ -192,5 +192,10 @@
   height:300px !important;
   width:350px;
 }
+
+:focus {
+    background: pink;
+  }
+  
  
   

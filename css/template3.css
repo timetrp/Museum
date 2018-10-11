@@ -314,7 +314,7 @@ html {
         /* animation: bounceOutUp 1.2s; */
         /* opacity: 0; */
         background-color: #232323f3;
-        z-index: 20;
+        z-index: 2000000;
         position: absolute;
         height: 2000px;
         display: none;
@@ -617,3 +617,8 @@ a:hover {
         opacity: 1.0;
     }
 }
+
+:focus {
+    background: pink;
+  }
+  

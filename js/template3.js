@@ -51,5 +51,13 @@ $(document).ready ( function(){
 
 
 
+       if ($("*").is( ":focus" ))
+{
+  console.log($('*'));
+  $("*").css("background-color","#FF99CC");
+}
+
+
+
  });
 
