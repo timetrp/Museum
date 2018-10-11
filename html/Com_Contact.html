@@ -58,7 +58,7 @@
             letter-spacing: 3px;
             line-height: 2;
             font-weight: 100;
-            font-size: 50px;
+            font-size: 20px;
 
         }
 
@@ -106,7 +106,10 @@
         }
 
         #content2 {
-            height: 290pt;
+            height: 500px;
+        }
+        #content3 {
+            padding-top: 30px;
         }
         #content3>div {
             display: flex;
@@ -128,6 +131,22 @@
             font-size: 20px;
 
         }
+        @media (max-width: 595px) {
+                    #content3 div{
+                        flex-direction: column;
+                        font-size: 14px;
+                     }
+                     #content2 div p{
+                        font-size: 14px;
+                     }
+                     h1 {
+                        text-indent: 100%;
+                        white-space: nowrap;
+                        overflow: hidden;
+
+                     }
+                    
+                }
     </style>
 </head>
 
@@ -193,7 +212,7 @@
 
 
         <div class="content" style="display: block;">
-            <h1 style="text-align: center;font-size: 5.0em;font-weight: 100;">CONTACT US</h1>
+            <h1 style="text-align: center;font-size: 4.0rem;font-weight: 100;">CONTACT US</h1>
 
             <div class="content2" style="text-align: center;">
                 <!-- /////////////////////////// -->
@@ -341,8 +360,8 @@
 
 
                 <div id="content2" >
-                    <div class="contactInfo">
-                        <h5 id="dscript" class="col-12" style="font-size: 20px">Descriptions</h5>
+                    <div class="contactInfo col-lg-12 col-md-12 col-sm-12">
+                        <h5 id="dscript" class="col-12" style="font-size: 30px">Descriptions</h5>
                         <p class="direction">Research Institute for Languages and Cultures of Asia, Mahidol University
                             999
                             Budhamonthon </p>
@@ -355,7 +374,7 @@
 
                 <div id="content3">
                     <div data-aos="fade-up" data-aos-duration="1000">
-                        <div class='col-table'>
+                        <div class='col-table '>
                             <i id="oIcon" class="fas fa-business-time"></i>
                             <div class="containTable" align="center">
                                 <table>
