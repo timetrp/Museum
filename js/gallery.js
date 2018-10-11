@@ -29,23 +29,25 @@ var marker4 = new google.maps.Marker({position: Long, map: map4});
 
 var x1;
 function showMap() {
-   var mapBtn = document.querySelectorAll('p.descript+span');
+   var mapBtn = document.querySelectorAll('p.descript+a span');
    mapBtn.forEach(function(el){
-    console.log(el.textContent);
+
    
       $(el).click(function() {
 
-        if(this.textContent === "Show Map"){
-          x1 = this.parentElement.parentElement.parentElement.firstElementChild;
 
-          this.parentElement.parentElement.parentElement.lastElementChild.style.display = 'block';
-         this.parentElement.parentElement.parentElement.firstElementChild.style.opacity = "0";
+        if(this.textContent === "Show Map"){
+
+
+          this.parentElement.parentElement.parentElement.parentElement.lastElementChild.style.display = 'block';
+         this.parentElement.parentElement.parentElement.parentElement.firstElementChild.style.opacity = "0";
+
 
           this.textContent = "Hide Map";
           
         }else{
-          this.parentElement.parentElement.parentElement.lastElementChild.style.display = 'none';
-         this.parentElement.parentElement.parentElement.firstElementChild.style.opacity = "1";
+          this.parentElement.parentElement.parentElement.parentElement.lastElementChild.style.display = 'none';
+         this.parentElement.parentElement.parentElement.parentElement.firstElementChild.style.opacity = "1";
 
           this.textContent = "Show Map";
 
@@ -80,7 +82,7 @@ $(document).ready(function(){
       if ($(window).width() >= $sm) {
          $('.left,.right,.section').css('height', $imgH);
       } else {
-        console.log($imgH);
+
          $('.section').css('height', 'auto');
          $('.left,.right').css('height', $imgH);
       }
