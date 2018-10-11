@@ -60,7 +60,7 @@ $(document).ready ( function(){
         
        
 
-        if($(window).width()> 769){
+        if($(window).width()>= 769){
           
           if($(window).width() >= 769 && $('.nav-dropdown').css('display') == 'contents'){
 

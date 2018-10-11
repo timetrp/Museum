@@ -91,7 +91,7 @@ body {
 
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .section .left, .section .middle, .section .right {
     width: 33.33333%;
     left: 33.33%;
@@ -151,7 +151,7 @@ body {
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 769px){
   .close-btn {
     display: none;
 

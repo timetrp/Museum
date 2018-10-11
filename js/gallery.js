@@ -111,10 +111,11 @@ $(document).ready(function(){
          $('.left,.right').css('height', $imgH);
       }
 
-      if($(window).width() >= $md) {
+      if($(window).width() > $md) {
         $('.middle').css('opacity', '1');
         $('.map').css('display', 'block');
       }else{
+
         $('.map').css('display', 'none');
         $('.middle').css('opacity', '1');
         $('.map-toggle').text('Show Map');
@@ -138,8 +139,9 @@ $(document).ready(function(){
 
 
 
-         if (($elementPos - $sectionVert) <= $scrollPos && ($elementPos - $sectionVert) + $sectionH > $scrollPos && $(window).width() >= 480) {
-            $(this).addClass('animate');
+         if (($elementPos - $sectionVert) <= $scrollPos && ($elementPos - $sectionVert) + $sectionH > $scrollPos && $(window).width() > $md) {
+ 
+          $(this).addClass('animate');
          } else {
             $(this).removeClass('animate');
          }

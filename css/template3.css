@@ -277,11 +277,17 @@ html {
     justify-content: space-around;
 }
 
-@media screen and (max-width : 769px) {
+@media screen and (max-width : 768px) {
 
 
     .navbar-toggler-icon {
         display: block;
+    }
+
+
+    .col-xl-5.col-lg-6.col-md-7{
+        flex: auto !important;
+        max-width: 100% !important;
     }
 
     .socialBar {
