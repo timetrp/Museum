@@ -130,6 +130,11 @@ body {
     top: 0;
     left: 0;
   }
+  .section.animate .right.map,.section.animate .left.map {
+
+    left: 0%;
+    z-index: 2;
+  }
 }
 
 @media (min-width: 768px) {
