@@ -30,6 +30,8 @@ tabLink.forEach(function (link){
 });
 
 
+var  x2;
+
 
 
 tribeName.forEach(function (name, index) {
@@ -50,15 +52,38 @@ tribeName.forEach(function (name, index) {
                             $(this).css("display", "flex")
                             .fadeIn("slow");
                         })
-                    }.bind(this), 10000);
+                    }.bind(this), 30000);
                 });
             });
         }
     });
+
+
+
+
+
 });
 
 
+function showContent(x){
 
+        console.log(x);
+        console.log();
+        $(tribeName[x-1]).fadeOut("slow",function(){
+            $(tribeContent[x-1]).fadeIn("slow", function(){
+                setTimeout(function () {
+                    $(this.nextElementSibling).fadeOut("slow", () => {
+                        // console.log(this);
+                        $(this).css("display", "flex")
+                        .fadeIn("slow");
+                    })
+                }.bind(this), 30000);
+
+            })
+        })
+        x2=this;
+
+}
 
 
 

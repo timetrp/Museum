@@ -34,9 +34,9 @@
     <body>
 
 
-        <div id="content-background-mainpage" style="background-image: url(../img/karen/step-rice.jpg)"></div>
+        <div  class="colorBlind" id="content-background-mainpage" style="background-image: url(../img/karen/step-rice.jpg)"></div>
 
-        <div style="z-index: 9999; position: relative;background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(126, 126, 126, 0.5),rgba(0, 0, 0, 0.5))">
+        <div  class="colorBlind" style="z-index: 9999; position: relative;background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(126, 126, 126, 0.5),rgba(0, 0, 0, 0.5))">
             <!-- background-image: linear-gradient(rgba(154, 25, 21, 0.5),rgba(104, 60, 17, 0.5)) -->
             <div class="top" style="margin-bottom:40px;">
 
@@ -96,12 +96,13 @@
 
 
 
-            <div class="socialBar">
-                <a href="https://www.facebook.com/Rilca.Mahidol" title="Facebook" alt="link to facebook page of RILCA"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a href="mailto:rilca.mu@gmail.com" title="Instagram"><i class="fas fa-at"></i></a>
-                <a href="./contact.html"><i class="fas fa-envelope"></i></a>
-
+            
+        <div class="socialBar">
+                <a href="https://www.facebook.com/Rilca.Mahidol" title="Facebook" alt="link to facebook page of RILCA"><i class="fab fa-facebook-f"></i></a>
+                <a href="mailto:rilca.mu@gmail.com" title="gmail"><i class="fas fa-at"></i></a>
+                <a href="https://www.youtube.com/channel/UCakHIKR7EeKNBCXC6wBkXPw/feed"><i class="fab fa-youtube"></i></a>
+            <a href="javascript:blindMode();"><i class="fas fa-fill" style="font-size: 20px; border-top: 2px solid white; padding: 20px;"></i></a> 
+    
             </div>
 
 
@@ -148,7 +149,7 @@
                         <a style="display: flex;
                         justify-content: center;
                         align-items: center;"
-                        href="javascript:console.log('Hello World!');"
+                        href="javascript:showContent(1);"
                         accessKey='1'
                         ><h1 accessKey='1'>Karen</h1></a>
                     </div>
@@ -196,7 +197,7 @@
                     </div>
 
                     <div class="tribe-name" accesskey="2">
-                        <a href="javascript:console.log('Hello World!');"
+                        <a href="javascript:showContent(2);"
                         style="display: flex;
                         justify-content: center;
                         align-items: center;"

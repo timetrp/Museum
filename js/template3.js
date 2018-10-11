@@ -22,6 +22,21 @@
 
 $(document).ready ( function(){
 
+  $('a').each(function(){
+    $(this).focus(function(){
+
+      $(this).mouseleave(function(){
+        $(this).blur();
+      })
+
+
+
+      
+    })
+       
+    
+  })
+
 
   var windowWidth = $(window).width();
   
@@ -112,7 +127,19 @@ $(document).ready ( function(){
   $("*").css("background-color","#FF99CC");
 }
 
+var blindMode = false;
+
 
 
  });
 
+
+ function blindMode (){
+
+  $()
+    $('.colorBlind').each(function(){
+
+      $(this).toggleClass("blindMode");
+    })
+
+}

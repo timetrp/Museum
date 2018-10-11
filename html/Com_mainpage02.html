@@ -34,8 +34,8 @@
     <body>
 
 
-        <div id="content-background-mainpage" style="background-image:url(../img/Lahu/lahu01.jpg)"></div>
-        <div style="z-index: 9999; position: relative;background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(126, 126, 126, 0.5),rgba(0, 0, 0, 0.5))">
+        <div  class="colorBlind" id="content-background-mainpage" style="background-image:url(../img/Lahu/lahu01.jpg)"></div>
+        <div  class="colorBlind" style="z-index: 9999; position: relative;background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(126, 126, 126, 0.5),rgba(0, 0, 0, 0.5))">
             <div class="top" style="margin-bottom:40px;">
 
                 <div class="row banner">
@@ -93,12 +93,13 @@
 
 
 
-            <div class="socialBar">
-                <a href="https://www.facebook.com/Rilca.Mahidol" title="Facebook" alt="link to facebook page of RILCA"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a href="mailto:rilca.mu@gmail.com" title="Instagram"><i class="fas fa-at"></i></a>
-                <a href="./contact.html"><i class="fas fa-envelope"></i></a>
-
+           
+        <div class="socialBar">
+                <a href="https://www.facebook.com/Rilca.Mahidol" title="Facebook" alt="link to facebook page of RILCA"><i class="fab fa-facebook-f"></i></a>
+                <a href="mailto:rilca.mu@gmail.com" title="gmail"><i class="fas fa-at"></i></a>
+                <a href="https://www.youtube.com/channel/UCakHIKR7EeKNBCXC6wBkXPw/feed"><i class="fab fa-youtube"></i></a>
+            <a href="javascript:blindMode();"><i class="fas fa-fill" style="font-size: 20px; border-top: 2px solid white; padding: 20px;"></i></a> 
+    
             </div>
 
 
@@ -143,7 +144,13 @@
 
 
                     <div class="tribe-name " accesskey="1">
-                        <h1 accessKey='1'>Mien</h1>
+                            <a style="display: flex;
+                            justify-content: center;
+                            align-items: center;"
+                            href="javascript:showContent(1);"
+                            accessKey='1'
+                            >
+                        <h1 accessKey='1'>Mien</h1></a>
                     </div>
                     <div class="tribe-content hide" accesskey="1">
                         <p class="paragraph"> &emsp;&emsp;&emsp;<span class="firstLetter">House of Mien</span> people
@@ -195,7 +202,13 @@
                     </div>
 
                     <div class="tribe-name" accesskey="2">
-                        <h1 accessKey='2'>Lahu</h1>
+                            <a style="display: flex;
+                            justify-content: center;
+                            align-items: center;"
+                            href="javascript:showContent(2);"
+                            accessKey='2'
+                            >
+                        <h1 accessKey='2'>Lahu</h1></a>
                     </div>
                     <div class="tribe-content hide" accesskey="2">
                         <p class="paragraph"> &emsp;&emsp;&emsp;<span class="firstLetter">Lahu</span> houses are high

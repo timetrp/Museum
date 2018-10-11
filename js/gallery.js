@@ -28,35 +28,45 @@ var marker4 = new google.maps.Marker({position: Long, map: map4});
 }
 
 var x1;
+var x2;
 function showMap() {
    var mapBtn = document.querySelectorAll('p.descript+a span');
-   mapBtn.forEach(function(el){
-
+   var mapBtn2 = document.querySelectorAll('p.descript+a');
    
-      $(el).click(function() {
+   mapBtn2.forEach(function(el){
+
+      $(el).click(function(){
+        console.log(this );
+        console.log(el);
+
+          x1 = el.firstChild;
+
+          if(x1.textContent === "Show Map"){
 
 
-        if(this.textContent === "Show Map"){
+            x1.parentElement.parentElement.parentElement.parentElement.lastElementChild.style.display = 'block';
+           x1.parentElement.parentElement.parentElement.parentElement.firstElementChild.style.opacity = "0";
+  
+  
+            x1.textContent = "Hide Map";
+            
+          }else{
+            x1.parentElement.parentElement.parentElement.parentElement.lastElementChild.style.display = 'none';
+           x1.parentElement.parentElement.parentElement.parentElement.firstElementChild.style.opacity = "1";
+  
+            x1.textContent = "Show Map";
+  
+          }
 
-
-          this.parentElement.parentElement.parentElement.parentElement.lastElementChild.style.display = 'block';
-         this.parentElement.parentElement.parentElement.parentElement.firstElementChild.style.opacity = "0";
-
-
-          this.textContent = "Hide Map";
           
-        }else{
-          this.parentElement.parentElement.parentElement.parentElement.lastElementChild.style.display = 'none';
-         this.parentElement.parentElement.parentElement.parentElement.firstElementChild.style.opacity = "1";
-
-          this.textContent = "Show Map";
-
-        }
-
-         
       })
-      
-   })
+
+    });
+
+
+
+  
+
 }
 
 
