@@ -1,3 +1,4 @@
+
 html,
 body {
 
@@ -22,7 +23,7 @@ body {
 .nav-dropdown {
     position: absolute;
     display: none;
-    z-index: 1;
+    z-index: 3000;
     /* box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); */
     list-style-type: none;
     padding: 0;
@@ -48,6 +49,8 @@ body {
 
 
 }
+
+
 
 a:hover,
 i:hover {
@@ -556,3 +559,8 @@ a:hover {
 
 
 }
+
+:focus {
+    background: pink;
+  }
+  

@@ -617,3 +617,8 @@ a:hover {
         opacity: 1.0;
     }
 }
+
+:focus {
+    background: pink;
+  }
+  

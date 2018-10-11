@@ -106,3 +106,8 @@ button {
     border-bottom: 2px solid grey;
 }
 
+
+:focus {
+    background: pink;
+  }
+  
