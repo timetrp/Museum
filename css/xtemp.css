@@ -560,7 +560,12 @@ a:hover {
 
 }
 
-:focus {
+    :focus {
     background: pink;
   }
-  
+
+  #dropdown-marker>a:focus {
+    background: none;
+    opacity: 0.5;
+ }
+   

@@ -28,6 +28,7 @@ $(document).ready ( function(){
 
         console.log(this);
         $('#dropdown-marker').toggleClass('dropped');
+      
         $(this).siblings('.nav-dropdown').toggle();
 
         // Close one dropdown when selecting another

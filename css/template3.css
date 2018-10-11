@@ -16,6 +16,7 @@ body {
     background-color: #232323;
 }
 
+
 .nav-dropdown {
     position: absolute;
     display: none;
@@ -621,4 +622,10 @@ a:hover {
 :focus {
     background: pink;
   }
+
+
+#dropdown-marker>a:focus {
+   background: none;
+   opacity: 0.5;
+}
   
