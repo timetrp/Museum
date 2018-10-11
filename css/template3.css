@@ -258,6 +258,10 @@ html {
         font-size: 10px;
 
     }
+    .content {
+        min-height: 150vh;
+    }
+    
 }
 
 
