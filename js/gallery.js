@@ -62,10 +62,24 @@ function showMap() {
 
 $(document).ready(function(){
 
+
+  var $sm = 480;
+  var $md = 768;
+
+  if($(window).width()<=$sm){
+    $('.section').each(function(){
+     
+
+
+
+         $(this).removeClass('animate');
+      
+   });
+
+  }
+
   showMap();
 
-   var $sm = 480;
-   var $md = 768;
 
    
    $('.middle:eq(0)').css('background', 'beige');
