@@ -213,8 +213,6 @@ html {
     color: #ffffff;
     font-size: 5.0em;
     animation: op1 2.0s;
-
-
 }
 
 #h1-home {
@@ -223,7 +221,7 @@ html {
 
 #p-home {
     text-align: justify;
-    font-size: 1.0em;
+    font-size: 12pt;
 }
 
 
