@@ -151,6 +151,7 @@ $(document).ready(function () {
   });
 
   $(window).scroll(function () {
+    onResize();
     $('.section').each(function () {
       var $elementPos = $(this).offset().top;
       var $scrollPos = $(window).scrollTop();
