@@ -29,7 +29,7 @@ body {
     padding: 0;
     text-align: left;
     animation: bounceInDown 1.2s;
-    background: rgba(23,23,23,0);;
+    background: rgba(23,23,23,1);
 
 }
 
@@ -181,6 +181,8 @@ html {
 
 
 @media (min-width: 769px) {
+    
+
     .bar {
 
         display: block !important;
@@ -196,7 +198,9 @@ html {
 
 @media screen and (max-width : 768px) {
 
-
+    .nav-dropdown {
+        background-color: rgba(23,23,23,0);
+    }
     .navbar-toggler-icon {
         display: block;
     }
